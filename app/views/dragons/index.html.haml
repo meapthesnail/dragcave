@@ -1,0 +1,20 @@
+%h1 My Dragons
+
+%table#dragons
+    %thead
+        %tr
+            %th Dragon
+            %th Views
+            %th Unique Views
+            %th Clicks
+            %th Link
+        %tbody
+            - @dragons.each do |dragon|
+                %tr
+                    %td= link_to image_tag(dragon.image), dragon.link, target: :_blank
+                    %td= dragon.views
+                    %td= dragon.unique_views
+                    %td= dragon.clicks
+                    %td= link_to "Go to Dragon...", dragon.link, target: :_blank
+                    
+= link_to "Add dragons", new_dragon_path
