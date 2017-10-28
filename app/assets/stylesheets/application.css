@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+html, body {
+    background: #364949;
+    font-family: Helvetica;
+    color: white;
+}
+h1.title {
+    color: gold;
+    font-style: bold;
+    font-size: 200%;
+    
+}
+h1 {
+    font-family: Garamond;
+    color: white;
+    font-size: 150%;
+}
+table#dragons {
+    margin: 50px 0px;
+    padding: 10px;
+    width: 100%;
+    color: DarkSlateGrey;
+    background: PowderBlue;
+}
+table#dragons th{
+    background: gold;
+}
+table#dragons th, table#dragons td{
+    text-align: left;
+    padding: 10px;
+}
+td img {
+    display: block;
+    margin: auto;
+}
+table#dragons a {
+    background: transparent;
+    text-decoration: none;
+    color: DarkSlateGrey;
+}
+tr:hover {
+    background: white;
+}
+a {
+    color: PowderBlue;
+    background: transparent;
+}
